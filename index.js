@@ -6,7 +6,11 @@ function validate() {
     //   "You enter wrong credentials");
     window.location.href = "index2.html";
   } else {
-    alert("invalid");
+    document.getElementById("wrongcredentials").innerHTML =
+      "You Entered Wrong Credentials";
+    document.getElementById("wrongcredentials").classList.add("redstyle");
+
+    // alert("invalid");
   }
   //   else {
   //     var element = (document.getElementById("morecharacters").innerHTML =

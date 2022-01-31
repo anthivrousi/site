@@ -33,4 +33,6 @@
 
 .movietitle p {
   font-size: 16px;
+  /* position: relative;
+  bottom: 0px; */
 }
