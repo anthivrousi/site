@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Anthi Vrousi</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="video/wave-cafe-video-bg.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="container">
+      <div class="title">
+        <h1>Let's see my favorite Movies!</h1>
+        <h2>Log in!</h2>
+      </div>
+      <div class="myform">
+        <form name="myform" method="post">
+          <label>User Name</label>
+          <input
+            class="forminput"
+            type="text"
+            name="Username"
+            id="username"
+            placeholder="UserName"
+            required
+            minlength="4"
+          />
+          <div id="morecharacters"></div>
+
+          <br />
+
+          <label>Password</label>
+          <input
+            type="password"
+            name="Password"
+            placeholder="Password"
+            id="password"
+          />
+          <div id="wrong"></div>
+          <br />
+          <!-- <h3 id="wrong" style="display: none">wrong Pass</h3> -->
+          <input
+            class="forminput"
+            type="button"
+            name="log"
+            id="logbutton"
+            value="Login"
+            onclick="validate()"
+          />
+          <br />
+          <!-- <a href="index2.html"> <button onclick="validate()">Submit</button></a> -->
+        </form>
+      </div>
+
+      <!-- <a href="index2.html">pata</a> -->
+    </div>
+
+    <script src="index.js" async defer></script>
+  </body>
+</html>

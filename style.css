@@ -1,0 +1,60 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  /* width: 500px; */
+  text-align: center;
+  /* margin-right: 0; */
+  /* justify-content: center; */
+}
+
+.title h1 {
+  color: green;
+  font-size: 3rem;
+}
+
+.title h2 {
+  color: green;
+  font-size: 2rem;
+}
+
+.myform {
+  /* background-color: violet; */
+  text-align: center;
+  padding: 40px;
+  /* justify-content: center; */
+  /* padding: 40px 50px; */
+}
+
+input {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#logbutton {
+  height: 30px;
+  width: 50px;
+  color: green;
+}
+
+.redstyle {
+  color: red;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  /* min-width: 100%;
+  min-height: 100%; */
+  z-index: -1;
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 320px) {
+  .images {
+    height: 150px;
+    width: 320;
+  }
+}
+.body {
+  background-color: pink;
+}
+
+.images {
+  float: left;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+}
+
+.mycontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movies {
+  max-width: 800px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.movietitle h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.movietitle p {
+  font-size: 16px;
+}
