@@ -10,18 +10,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- video -->
     <video autoplay muted loop id="myVideo">
       <source src="video/wave-cafe-video-bg.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
+
+    <div class="centralmenu">
+<h1>Click Here!</h1>
+
+<button onclick="document.getElementById('firstbutton').style.display='block'" style="width:auto;">Login</button>
+</div>
+
+<div id="firstbutton" class="modal">
+
+    <!-- central container -->
     <div class="container">
       <div class="title">
         <h1>Let's see my favorite Movies!</h1>
         <h2>Log in!</h2>
       </div>
-      <div class="myform">
+      <div id="myform">
         <form name="myform" method="post">
-          <label>UserName: </label>
+          <label>Username: </label>
           <input
             class="forminput"
             type="text"
@@ -54,9 +65,19 @@
             onclick="validate()"
           />
           <div id="wrongcredentials"></div>
+          <!-- <input type="button" onclick="Reset()" value="Reset form"> -->
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
 
           <br />
-          <!-- <a href="index2.html"> <button onclick="validate()">Submit</button></a> -->
+          <div class="lastcontainer">
+            <button type="button" onclick="document.getElementById('firstbutton').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">Forgot your password?</a></span>
+          </div>
+
         </form>
       </div>
 

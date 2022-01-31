@@ -1,37 +1,46 @@
-.body {
+body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
-  /* width: 500px; */
+  width: 800px;
   text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
   padding: 20px;
-  /* margin-right: 0; */
-  /* justify-content: center; */
 }
 
 .title h1 {
-  color: green;
+  color: white;
   font-size: 3rem;
+  padding: 40px;
 }
 
 .title h2 {
-  color: green;
+  color: white;
   font-size: 2rem;
 }
 
 .myform {
-  /* text-align: center; */
+  text-align: center;
   padding: 40px;
 }
 
 label {
   color: aliceblue;
   padding: 10px;
-  border: solid white;
+  font-size: 1.5rem;
   margin: 20px;
 }
 
@@ -41,6 +50,16 @@ input {
   margin: 8px 0;
   box-sizing: border-box;
 }
+
+/* input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+} */
 
 #logbutton {
   height: 50px;
@@ -65,4 +84,53 @@ input {
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.centralmenu {
+  height: 250px;
+  width: 400px;
+  /* opacity: 0.5;
+  background-color: black; */
+  padding: 20px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+button {
+  background-color: rgb(130, 202, 130);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+.lastcontainer {
+  padding: 16px;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 5px 10px;
+  background-color: #b4554f;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
 }
