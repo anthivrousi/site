@@ -9,16 +9,11 @@ function validate() {
     document.getElementById("wrongcredentials").innerHTML =
       "You Entered Wrong Credentials";
     document.getElementById("wrongcredentials").classList.add("redstyle");
-
-    // alert("invalid");
   }
-  //   else {
-  //     var element = (document.getElementById("morecharacters").innerHTML =
-  //       "Add More");
-  //   }
 
   if (userUsername.length < 5) {
-    document.getElementById("morecharacters").innerHTML = "Add More";
+    document.getElementById("morecharacters").innerHTML =
+      "Please Add More Characters";
     document.getElementById("morecharacters").classList.add("redstyle");
   }
 }

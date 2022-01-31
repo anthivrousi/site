@@ -5,9 +5,10 @@
 }
 
 .container {
-  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-color: rgba(0, 0, 0, 0.3);
   /* width: 500px; */
   text-align: center;
+  padding: 20px;
   /* margin-right: 0; */
   /* justify-content: center; */
 }
@@ -23,11 +24,15 @@
 }
 
 .myform {
-  /* background-color: violet; */
-  text-align: center;
+  /* text-align: center; */
   padding: 40px;
-  /* justify-content: center; */
-  /* padding: 40px 50px; */
+}
+
+label {
+  color: aliceblue;
+  padding: 10px;
+  border: solid white;
+  margin: 20px;
 }
 
 input {
@@ -38,9 +43,14 @@ input {
 }
 
 #logbutton {
-  height: 30px;
-  width: 50px;
+  height: 50px;
+  width: 150px;
   color: green;
+  cursor: pointer;
+}
+
+#logbutton :hover {
+  background-color: pink;
 }
 
 .redstyle {
@@ -54,7 +64,5 @@ input {
   position: fixed;
   right: 0;
   bottom: 0;
-  /* min-width: 100%;
-  min-height: 100%; */
   z-index: -1;
 }

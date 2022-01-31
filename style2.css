@@ -1,17 +1,26 @@
 @media screen and (max-width: 320px) {
   .images {
-    height: 150px;
-    width: 320;
+    height: 50px;
+    width: 50px;
+  }
+  body {
+    background-color: blue;
   }
 }
-.body {
-  background-color: pink;
+/* body {
+  background-image: url("images/movies.png");
+} */
+
+h1 {
+  font-size: 3rem;
+  color: black;
+  padding: 20px;
 }
 
 .images {
   float: left;
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 180px;
   padding: 10px;
 }
 
@@ -20,19 +29,31 @@
   flex-wrap: wrap;
 }
 
+li {
+  height: 200px;
+  width: 800px;
+  list-style: none;
+}
+
+.movietitle {
+  height: 200px;
+}
+
 .movies {
   max-width: 800px;
   margin: 10px;
   background: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
 }
 
 .movietitle h2 {
   font-size: 20px;
   font-weight: bold;
+  padding: 10px;
 }
 
-.movietitle p {
+p {
   font-size: 16px;
-  /* position: relative;
-  bottom: 0px; */
+  position: relative;
+  bottom: 0px;
 }
