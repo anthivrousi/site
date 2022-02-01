@@ -3,14 +3,13 @@ function validate() {
   var userUsername = document.getElementById("username").value;
   var userPassword = document.getElementById("password").value;
   if (userUsername == "iconplatforms" && userPassword == "P@s$w0rD") {
-    // var element = (document.getElementById("wrong").innerHTML =
-    //   "You enter wrong credentials");
     window.location.href = "index2.html";
   } else {
     attempt--;
-    alert("You have left " + attempt + " attempt;");
+
     document.getElementById("wrongcredentials").innerHTML =
-      "You Entered Wrong Credentials";
+      "You Entered Wrong Credentials! exeis 8 psifia to prwto arxizei apo d";
+    alert("You have left " + attempt + " attempt!");
     document.getElementById("wrongcredentials").classList.add("redstyle");
   }
 
@@ -27,6 +26,10 @@ function validate() {
     document.getElementById("morecharacters").classList.add("redstyle");
   }
 }
+
+// function mybutton() {
+//   document.getElementById("firstbutton").classList.add("firstbutton");
+// }
 
 var modal = document.getElementById("firstbutton");
 

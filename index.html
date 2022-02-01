@@ -10,78 +10,87 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- video -->
-    <video autoplay muted loop id="myVideo">
-      <source src="video/wave-cafe-video-bg.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <div class="menucontainer">
+      <!-- video -->
+      <video autoplay muted loop id="myVideo">
+        <source src="video/wave-cafe-video-bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-    <div class="centralmenu">
-<h1>Click Here!</h1>
-
-<button onclick="document.getElementById('firstbutton').style.display='block'" style="width:auto;">Login</button>
-</div>
-
-<div id="firstbutton" class="modal">
-
-    <!-- central container -->
-    <div class="container">
-      <div class="title">
-        <h1>Let's see my favorite Movies!</h1>
-        <h2>Log in!</h2>
+      <div class="centralmenu">
+        <h1>Click Here!</h1>
+        <button
+          onclick="document.getElementById('firstbutton').style.display='block'"
+          style="width: auto"
+        >
+          Login
+        </button>
       </div>
-      <div id="myform">
-        <form name="myform" method="post">
-          <label>Username: </label>
-          <input
-            class="forminput"
-            type="text"
-            name="Username"
-            id="username"
-            placeholder="UserName"
-            required
-            minlength="4"
-          />
-          <div id="morecharacters"></div>
 
-          <br />
+      <div id="firstbutton" class="modal">
+        <!-- central container -->
+        <div class="container">
+          <div class="title">
+            <h1>Let's see my favorite Movies!</h1>
+            <h2>Log in!</h2>
+          </div>
+          <div id="myform">
+            <form name="myform" method="post">
+              <label>Username: </label>
+              <input
+                class="forminput"
+                type="text"
+                name="Username"
+                id="username"
+                placeholder="UserName"
+                required
+                minlength="4"
+              />
+              <div id="morecharacters"></div>
 
-          <label>Password: </label>
-          <input
-            class="forminput"
-            type="password"
-            name="Password"
-            placeholder="Password"
-            id="password"
-          />
-          <div id="wrong"></div>
-          <br />
-          <input
-            class="forminput"
-            type="button"
-            name="log"
-            id="logbutton"
-            value="Login"
-            onclick="validate()"
-          />
-          <div id="wrongcredentials"></div>
-          <!-- <input type="button" onclick="Reset()" value="Reset form"> -->
+              <br />
 
-          <label>
-            <input type="checkbox" checked="checked" name="remember" /> Remember
-            me
-          </label>
+              <label>Password: </label>
+              <input
+                class="forminput"
+                type="password"
+                name="Password"
+                placeholder="Password"
+                id="password"
+              />
+              <div id="wrongcredentials"></div>
 
-          <br />
-          <div class="lastcontainer">
-            <button type="button" onclick="document.getElementById('firstbutton').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">Forgot your password?</a></span>
+              <div id="wrong"></div>
+
+              <br />
+
+              <div class="buttoncontainer">
+                <button type="button" onclick="validate()">Submit</button>
+                <button
+                  type="button"
+                  onclick="document.getElementById('firstbutton').style.display='none'"
+                  class="cancelbtn"
+                >
+                  Cancel
+                </button>
+              </div>
+
+              <div class="checkcontainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" />
+                  Remember me
+                </label>
+
+                <br />
+
+                <span class="psw"><a href="#">Forgot your password?</a></span>
+              </div>
+            </form>
           </div>
 
-        </form>
+          <!-- <a href="index2.html">pata</a> -->
+        </div>
       </div>
-
-      <!-- <a href="index2.html">pata</a> -->
     </div>
 
     <script src="index.js" async defer></script>

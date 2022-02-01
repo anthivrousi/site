@@ -1,15 +1,19 @@
-@media screen and (max-width: 320px) {
-  .images {
-    height: 50px;
-    width: 50px;
+@media screen and (max-width: 600px) {
+  .movies {
+    display: flex;
+    flex-direction: column;
   }
   body {
     background-color: blue;
   }
+
+  body {
+    background-color: blue;
+  }
 }
-/* body {
+body {
   background-image: url("images/movies.png");
-} */
+}
 
 h1 {
   font-size: 3rem;
@@ -22,6 +26,7 @@ h1 {
   height: 180px;
   width: 180px;
   padding: 10px;
+  display: block;
 }
 
 .mycontainer {
@@ -35,25 +40,35 @@ li {
   list-style: none;
 }
 
-.movietitle {
-  height: 200px;
+.movieinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 15px;
 }
 
 .movies {
-  max-width: 800px;
+  width: 800px;
+  height: 200px;
   margin: 10px;
   background: rgba(0, 0, 0, 0.6);
   color: aliceblue;
 }
 
-.movietitle h2 {
+h2 {
   font-size: 20px;
   font-weight: bold;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 p {
   font-size: 16px;
-  position: relative;
+  /* position: relative; */
   bottom: 0px;
 }
+
+/* .firstbutton {
+  display: block;
+  width: auto;
+} */
