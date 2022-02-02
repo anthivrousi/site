@@ -1,16 +1,3 @@
-@media screen and (max-width: 600px) {
-  .movies {
-    display: flex;
-    flex-direction: column;
-  }
-  body {
-    background-color: blue;
-  }
-
-  body {
-    background-color: blue;
-  }
-}
 body {
   background-image: url("images/movies.png");
 }
@@ -18,7 +5,40 @@ body {
 h1 {
   font-size: 3rem;
   color: black;
-  padding: 20px;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+.mycontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movies {
+  width: 1000px;
+  height: 200px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+}
+
+.movieinfo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 15px;
 }
 
 .images {
@@ -29,46 +49,41 @@ h1 {
   display: block;
 }
 
-.mycontainer {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .movieinfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 15px;
+  }
+
+  .images {
+    height: 200px;
+    width: 300px;
+  }
 }
 
-li {
-  height: 200px;
-  width: 800px;
-  list-style: none;
+.removebutton {
+  visibility: hidden;
 }
-
-.movieinfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  margin: 15px;
-}
-
-.movies {
-  width: 800px;
-  height: 200px;
-  margin: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  color: aliceblue;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: bold;
-  /* padding: 10px; */
-}
-
-p {
-  font-size: 16px;
-  /* position: relative; */
-  bottom: 0px;
-}
-
-/* .firstbutton {
-  display: block;
-  width: auto;
-} */

@@ -8,7 +8,7 @@ function validate() {
     attempt--;
 
     document.getElementById("wrongcredentials").innerHTML =
-      "You Entered Wrong Credentials! exeis 8 psifia to prwto arxizei apo d";
+      "You Entered Wrong Credentials! Remember you should enter 8 characters and the third is the letter s ";
     alert("You have left " + attempt + " attempt!");
     document.getElementById("wrongcredentials").classList.add("redstyle");
   }
@@ -27,19 +27,10 @@ function validate() {
   }
 }
 
-// function mybutton() {
-//   document.getElementById("firstbutton").classList.add("firstbutton");
-// }
-
 var modal = document.getElementById("firstbutton");
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 };
-
-// function Reset() {
-//   document.getElementById("myform").reset();
-// }
